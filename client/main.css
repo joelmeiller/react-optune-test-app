@@ -1,0 +1,21 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  padding: 10px;
+  font-family: sans-serif;
+  background: #EFF0F2;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, ul, li, p, button {
+  color: #0A1C3B;
+  padding: 0;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.modal__open {
+  overflow: hidden;
+}

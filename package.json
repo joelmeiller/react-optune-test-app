@@ -1,0 +1,35 @@
+{
+  "name": "optune-test",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.8.4",
+    "meteor-node-stubs": "^1.0.0",
+    "moment": "^2.25.3",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-modal": "^3.11.2",
+    "simpl-schema": "^1.7.1",
+    "styled-components": "^5.1.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
